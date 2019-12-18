@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css">
+
+    {% block header %}
+    <title>{% block title %} {% endblock %} | RedDack Daily</title>
+    {% endblock %}
+  </head>
+  <header>
+    <center>
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <form action="/">
+            <input type="image" src="/static/logo.JPG">
+          </form>
+        </div>
+      </div>
+    </center>
+  </header>
+
+  <body>
+    {% block body %} {% endblock %}
+  </body>
+
+  <hr>
+
+  <div class="grid-x grid-padding-x text-center">
+    <div class="large-12 cell">
+
+      <footer>
+        {% block footer %} {% endblock %}
+        <p>Copyright &copy; 2019 Team RedDacks</p><p>Grace Mao, Nahi Khan, Sophie(a) Nichol, and Jackson Zou ┐('～`；)┌</p>
+      </footer>
+    </div>
+  </div>
+
+</html>
